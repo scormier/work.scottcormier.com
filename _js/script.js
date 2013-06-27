@@ -3,11 +3,11 @@
 
 function getTagline(thisId) {
 	var txt = [
-		"an interface designer",
+		"a product designer",
+    "a mobile designer",
 		"a user experience designer",
-		"an interaction designer",
-		"a user researcher",
-		"a usability analyist"
+		"a product manager",
+		"a user researcher"
 	];
 
 	if (!thisId) {

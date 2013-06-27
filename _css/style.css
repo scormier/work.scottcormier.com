@@ -116,6 +116,10 @@ ol {
   margin: 0;
   padding: 0;
 }
+  ul.styled {
+    list-style: disc;
+    padding-left: 15px;
+  }
 
 #masthead {
 	margin: 10px auto 25px;
