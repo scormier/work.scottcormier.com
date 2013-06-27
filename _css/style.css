@@ -120,6 +120,15 @@ ol {
     list-style: disc;
     padding-left: 15px;
   }
+a.secondary {
+  color: #ccc;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+  a.secondary:hover {
+    color: #990000;
+  }
 
 #masthead {
 	margin: 10px auto 25px;
@@ -212,6 +221,12 @@ ol {
         position: relative;
         width: 100%;
 			}
+        .past {
+          visibility: hidden;
+        }
+        #main article ~ a {
+          margin-bottom: 30px;
+        }
         #main .images {
           border: 1px solid rgba(0, 0, 0, 0.2);
           border-radius: 4px 0 0 4px;

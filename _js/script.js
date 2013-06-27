@@ -33,7 +33,6 @@ function updateTagLine(startId) {
 	else {
 		window.setTimeout("updateTagLine(0)", 10000);
 	}
-
 }
 function updateHeaderSize() {
 	var mHead	= $("#masthead");
@@ -48,9 +47,9 @@ function updateHeaderSize() {
 	var curSize	= $(mHeadTx).css("fontSize").replace("px","");
 	$(mHeadTx).css("font-size", Math.floor(curSize * diffW));
 }
-
-$(window).load(function() {
-  $('.images').flexslider({
+function initFlexslider(imgs) {
+  var imgs = $('.images');
+  $(imgs).flexslider({
     after: function(s){
       // Get current slide
       var c_slide = s.currentSlide + 1;
@@ -66,8 +65,14 @@ $(window).load(function() {
     nextText: '>',
     prevText: '<',
     slideshow: false
-  });
+  });  
+}
+
+$(window).load(function() {
+  var imgs = $('.images');
+  initFlexslider(imgs);
 });
+
 $(document).ready(function() {
 	updateTagLine();
 	updateHeaderSize();
@@ -79,4 +84,18 @@ $(document).ready(function() {
 	}).mouseleave(function(){
 	  $(this).find('.flex-direction-nav li').fadeOut();
 	});
+
+  // Hide / Show past work
+  $('#past_work').click(function(){
+    var isVisible = $('.past').first().css("visibility");
+    if (isVisible == "visible") {
+      $(this).text('View past work');
+      $('.past').css("visibility", "hidden");
+    }
+    else {
+      $(this).text('Hide past work');
+      $('.past').css("visibility", "visible");
+    }
+    return false;
+  });
 });
