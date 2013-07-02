@@ -42,7 +42,7 @@ function updateHeaderSize() {
 	var textW	= $(mHead).find(".title").width();
 	var diffW	= headerW/textW;
 	
-	$(mHeadTx).css("fontSize", "197%");
+	$(mHeadTx).css("fontSize", "185%");
 	
 	var curSize	= $(mHeadTx).css("fontSize").replace("px","");
 	$(mHeadTx).css("font-size", Math.floor(curSize * diffW));
@@ -71,6 +71,11 @@ function initFlexslider(imgs) {
 $(window).load(function() {
   var imgs = $('.images');
   initFlexslider(imgs);
+  // Center flexslider nav dots
+  $('.flex-control-nav').each(function(){
+    var dotCount = $(this).find('li').length;
+    $(this).css('width', dotCount*25 + "px");
+  });
 });
 
 $(document).ready(function() {
@@ -98,4 +103,5 @@ $(document).ready(function() {
     }
     return false;
   });
+
 });

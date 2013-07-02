@@ -278,6 +278,12 @@ a.secondary {
         				-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.4);
         				box-shadow:0 5px 10px rgba(0,0,0,0.4);
         			}
+              #main .img .no-boxshadow,
+              #main .img .no-boxshadow:hover {
+                -moz-box-shadow:none;
+                -webkit-box-shadow:none;
+                box-shadow:none;
+              }
           #main .nav {
             border-top: 1px solid rgba(0, 0, 0, 0.2);
             bottom: 0;
@@ -300,22 +306,24 @@ a.secondary {
                 width: 25px;
               }
               #main .flex-control-nav a {
-                border: 1px solid rgba(57,68,74,1);
+                background: #bbb;
                 border-radius: 20px;
                 cursor: pointer;
                 display: block;
-                height: 12px;
+                height: 14px;
                 margin: 0 auto;
                 text-indent: -9999px;
-                width: 12px;
+                width: 14px;
               }
               #main .flex-control-nav a:hover {
                 background: rgba(57,68,74,0.5);
                 box-shadow: 0 0 1px #fff inset;
               }
               #main .flex-control-nav .active {
-                background: rgba(57,68,74,0.8);
-                box-shadow: 0 0 1px #fff inset;
+                background: rgb(57, 68, 74);
+              }
+              #main .flex-control-nav a.active:hover {
+                background: rgb(57, 68, 74);
               }
             #main .flex-direction-nav {
               left: 0;
@@ -325,25 +333,19 @@ a.secondary {
               z-index: 1;
             }
               #main .flex-direction-nav li {
-                background: rgba(57,68,74,0.5);
-                border-bottom: 1px solid rgba(57,68,74,0.6);
-                border-right: 1px solid rgba(57,68,74,0.6);
-                border-top: 1px solid rgba(57,68,74,0.6);
-                border-radius: 0 3px 3px 0;
-                box-shadow: 0 0 1px #fff inset;
+                background: rgb(57, 68, 74);
+                border-radius: 0 2px 2px 0;
                 display: none;
                 float: left;
                 height: 35px;
                 width: 35px;
               }
               #main .flex-direction-nav li:last-child {
-                border-left: 1px solid rgba(0,0,0,0.7);
-                border-right: none;
-                border-radius: 3px 0 0 3px;
+                border-radius: 2px 0 0 2px;
                 float: right;
               }
                 #main .flex-direction-nav li a {
-                  color: #fff;
+                  color: #bbb;
                   cursor: pointer;
                   display: block;
                   font-family: Comic Sans MS, serif;
@@ -352,7 +354,6 @@ a.secondary {
                   height: 100%;
                   line-height: 30px;
                   text-align: center;
-                  text-shadow: 0 0 1px #111;
                   width: 100%;
                 }
 
