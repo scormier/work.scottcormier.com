@@ -253,6 +253,7 @@ input.button {
         width: 100%;
 			}
         #main article.past {
+          display: none;
           visibility: hidden;
         }
         #main article.contact {
@@ -266,198 +267,201 @@ input.button {
         #main article ~ a {
           margin-bottom: 30px;
         }
-        #main .images {
-          border: 1px solid rgba(0, 0, 0, 0.2);
-          border-radius: 4px 0 0 4px;
-          -moz-box-shadow: 0 0 4px rgba(255,255,255,1) inset;
-          -webkit-box-shadow: 0 0 4px rgba(255,255,255,1) inset;
-          box-shadow: 0 0 4px rgba(255,255,255,1) inset;
-          -moz-box-sizing: border-box;
-          -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-          float: left;
-          height: 100%;
-          position: relative;
-          width: 60%;
-        }
-          #main .slides:after {
-            clear: both;
-            content: '.';
-            display: block;
-            height: 0;
-            line-height: 0;
-            visibility: hidden;
-          }
-            #main .slides > li {
-              display: none;
-              position: relative;
-            }
-            #main .img {
-              -moz-box-sizing: border-box;
-              -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-              float: left;
-              height: 85%;
-              padding: 4%;
-      			  width: 100%;
-      			}
-      			  #main .img img {
-      			    -moz-box-shadow:0 5px 10px rgba(0,0,0,0.3);
-        				-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.3);
-        				box-shadow:0 5px 10px rgba(0,0,0,0.3);
-        				cursor: pointer;
-        				display: block;
-        				margin: 0 auto;
-        				max-height: 300px;
-        				max-width: 100%;
-        				width: auto;
-        			}
-      			  #main .img img:hover {
-        				-moz-box-shadow:0 5px 10px rgba(0,0,0,0.4);
-        				-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.4);
-        				box-shadow:0 5px 10px rgba(0,0,0,0.4);
-        			}
-              #main .img .no-boxshadow,
-              #main .img .no-boxshadow:hover {
-                -moz-box-shadow:none;
-                -webkit-box-shadow:none;
-                box-shadow:none;
-              }
-          #main .nav {
-            border-top: 1px solid rgba(0, 0, 0, 0.2);
-            bottom: 0;
+          #main .images {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 4px 0 0 4px;
+            -moz-box-shadow: 0 0 4px rgba(255,255,255,1) inset;
+            -webkit-box-shadow: 0 0 4px rgba(255,255,255,1) inset;
+            box-shadow: 0 0 4px rgba(255,255,255,1) inset;
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
             float: left;
-            height: 50px;
-            margin: 0;
-            padding: 2% 4%;
-            position: absolute;
-            width: 100%;
+            height: 100%;
+            position: relative;
+            width: 60%;
           }
-            #main .flex-control-nav {
-              margin: 8px auto 0;
-              width: 150px;
+            #main .slides:after {
+              clear: both;
+              content: '.';
+              display: block;
+              height: 0;
+              line-height: 0;
+              visibility: hidden;
             }
-              #main .flex-control-nav li {
-                float: left;
-                width: 25px;
-              }
-              #main .flex-control-nav a {
-                background: #bbb;
-                border-radius: 20px;
-                cursor: pointer;
-                display: block;
-                height: 14px;
-                margin: 0 auto;
-                text-indent: -9999px;
-                width: 14px;
-              }
-              #main .flex-control-nav a:hover {
-                background: rgba(57,68,74,0.5);
-                box-shadow: 0 0 1px #fff inset;
-              }
-              #main .flex-control-nav .active {
-                background: rgb(57, 68, 74);
-              }
-              #main .flex-control-nav a.active:hover {
-                background: rgb(57, 68, 74);
-              }
-            #main .flex-direction-nav {
-              left: 0;
-              position: absolute;
-              top: -190px;
-              width: 100%;
-              z-index: 1;
-            }
-              #main .flex-direction-nav li {
-                background: rgb(57, 68, 74);
-                border-radius: 0 2px 2px 0;
+              #main .slides > li {
                 display: none;
+                position: relative;
+              }
+              #main .img {
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
                 float: left;
-                height: 35px;
-                width: 35px;
+                height: 85%;
+                padding: 4%;
+        			  width: 100%;
+        			}
+        			  #main .img img {
+        			    -moz-box-shadow:0 5px 10px rgba(0,0,0,0.3);
+          				-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.3);
+          				box-shadow:0 5px 10px rgba(0,0,0,0.3);
+          				cursor: pointer;
+          				display: block;
+          				margin: 0 auto;
+          				max-height: 300px;
+          				max-width: 100%;
+          				width: auto;
+          			}
+        			  #main .img img:hover {
+          				-moz-box-shadow:0 5px 10px rgba(0,0,0,0.4);
+          				-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.4);
+          				box-shadow:0 5px 10px rgba(0,0,0,0.4);
+          			}
+                #main .img .no-boxshadow,
+                #main .img .no-boxshadow:hover {
+                  -moz-box-shadow:none;
+                  -webkit-box-shadow:none;
+                  box-shadow:none;
+                }
+            #main .nav {
+              border-top: 1px solid rgba(0, 0, 0, 0.2);
+              bottom: 0;
+              -moz-box-sizing: border-box;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              float: left;
+              height: 50px;
+              margin: 0;
+              padding: 2% 4%;
+              position: absolute;
+              width: 100%;
+            }
+              #main .flex-control-nav {
+                margin: 8px auto 0;
+                width: 150px;
               }
-              #main .flex-direction-nav li:last-child {
-                border-radius: 2px 0 0 2px;
-                float: right;
-              }
-                #main .flex-direction-nav li a {
-                  color: #bbb;
+                #main .flex-control-nav li {
+                  float: left;
+                  width: 25px;
+                }
+                #main .flex-control-nav a {
+                  background: #bbb;
+                  border-radius: 20px;
                   cursor: pointer;
                   display: block;
-                  font-family: Comic Sans MS, serif;
-                  font-size: 30px;
-                  font-weight: bold;
-                  height: 100%;
-                  line-height: 30px;
-                  text-align: center;
-                  width: 100%;
+                  height: 14px;
+                  margin: 0 auto;
+                  text-indent: -9999px;
+                  width: 14px;
                 }
+                #main .flex-control-nav a:hover {
+                  background: rgba(57,68,74,0.5);
+                  box-shadow: 0 0 1px #fff inset;
+                }
+                #main .flex-control-nav .active {
+                  background: rgb(57, 68, 74);
+                }
+                #main .flex-control-nav a.active:hover {
+                  background: rgb(57, 68, 74);
+                }
+              #main .flex-direction-nav {
+                left: 0;
+                position: absolute;
+                top: -190px;
+                width: 100%;
+                z-index: 1;
+              }
+                #main .flex-direction-nav li {
+                  background: rgb(57, 68, 74);
+                  border-radius: 0 2px 2px 0;
+                  display: none;
+                  float: left;
+                  height: 35px;
+                  width: 35px;
+                }
+                #main .flex-direction-nav li:last-child {
+                  border-radius: 2px 0 0 2px;
+                  float: right;
+                }
+                  #main .flex-direction-nav li a {
+                    color: #bbb;
+                    cursor: pointer;
+                    display: block;
+                    font-family: Comic Sans MS, serif;
+                    font-size: 30px;
+                    font-weight: bold;
+                    height: 100%;
+                    line-height: 30px;
+                    text-align: center;
+                    width: 100%;
+                  }
 
-        #main article .description {
-          border-top: 1px solid rgba(0, 0, 0, 0.2);
-          border-right: 1px solid rgba(0, 0, 0, 0.2);
-          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-          border-radius: 0 4px 4px 0;
-          -moz-box-shadow: 0 0 4px rgba(255,255,255,1) inset;
-          -webkit-box-shadow: 0 0 4px rgba(255,255,255,1) inset;
-          box-shadow: 0 0 4px rgba(255,255,255,1) inset;
-          -moz-box-sizing: border-box;
-          -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-          float: left;
-          height: 100%;
-          position: relative;
-          width: 40%;
-        }
-          #main .title {
-            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-            font-size: 18px;
-            font-weight: bold;
-            height: 34px;
-            line-height: 40px;
-            padding: 2% 4%;
-          }
-            #main form .title {
-              border: none;
-              padding: 2% 2% 0;
-              margin: 0;
-            }
-          #main .info {
-            padding: 4%;
-          }
-            #main .slide_info  {
-              display: none;
-            }
-            #main .slide_info:first-child  {
-              display: block;
-            }
-  				#main .tags {
-  					background: url("http://static.tumblr.com/0vhitxf/x71lfrx6x/ico-tags.png") no-repeat scroll 4% 16px transparent;
+          #main article .description {
             border-top: 1px solid rgba(0, 0, 0, 0.2);
-  					bottom: 0;
+            border-right: 1px solid rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 0 4px 4px 0;
+            -moz-box-shadow: 0 0 4px rgba(255,255,255,1) inset;
+            -webkit-box-shadow: 0 0 4px rgba(255,255,255,1) inset;
+            box-shadow: 0 0 4px rgba(255,255,255,1) inset;
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
-  					display: block;
-  					float: left;
-            height: 50px;
-            line-height: 38px;
-  					padding: 2% 4% 2% 13%;
-  					position: absolute;
-  					width: 100%;
-  				}
-  				  #main .tags ul {
-  				    list-style: none;
-  				    margin: 0;
-  				    padding: 0;
-  				  }
-  				  #main .tags li {
-  				    float: left;
-              margin: 0 20px 0 0;
-				    }
+            float: left;
+            height: 100%;
+            position: relative;
+            width: 40%;
+          }
+            #main .title {
+              border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+              font-size: 18px;
+              font-weight: bold;
+              height: 34px;
+              line-height: 40px;
+              padding: 2% 4%;
+            }
+              #main form .title {
+                border: none;
+                padding: 2% 2% 0;
+                margin: 0;
+              }
+            #main .info {
+              padding: 4%;
+            }
+              #main .slide_info  {
+                display: none;
+              }
+              #main .slide_info:first-child  {
+                display: block;
+              }
+    				#main .tags {
+    					background: url("http://static.tumblr.com/0vhitxf/x71lfrx6x/ico-tags.png") no-repeat scroll 4% 16px transparent;
+              border-top: 1px solid rgba(0, 0, 0, 0.2);
+    					bottom: 0;
+              -moz-box-sizing: border-box;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+    					display: block;
+    					float: left;
+              height: 50px;
+              line-height: 38px;
+    					padding: 2% 4% 2% 13%;
+    					position: absolute;
+    					width: 100%;
+    				}
+    				  #main .tags ul {
+    				    list-style: none;
+    				    margin: 0;
+    				    padding: 0;
+    				  }
+    				  #main .tags li {
+    				    float: left;
+                margin: 0 20px 0 0;
+  				    }
+  #past_work {
+    display: none;
+  }
 
 footer {
 	clear: both;
@@ -584,6 +588,9 @@ footer {
         border-radius: 4px 4px 0 0;
         min-height: 390px;
       }
+        #main .flex-direction-nav {
+          display: none;
+        }
       #main article .description {
         border: 1px solid rgba(0, 0, 0, 0.2);
         border-top: none;
@@ -597,6 +604,7 @@ footer {
         height: auto;
         position: relative;
       }
+
 		#sidebar {
 			float: none;
 			width: 100%;
