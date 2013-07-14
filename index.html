@@ -17,8 +17,15 @@
 
 	<link rel="stylesheet" href="_css/style.css" type="text/css" media="screen" />
 	<script src="_js/modernizr-2.0.6.js"></script>
-	<script type="text/javascript" src="http://use.typekit.com/cpr7cwp.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript">
+      (function() {
+        var config = {
+          kitId: 'cpr7cwp',
+          scriptTimeout: 3000
+        };
+        var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+      })();
+    </script>
 </head>
 <body>
 	<header id="masthead">
@@ -36,12 +43,13 @@
 	<div id="container">
 		<div id="main">
 			<div class="wrapper">
+                <p class="intro">Although this site is mobile optimized, I'd recommend viewing it on a PC for the best experience.</p>
                 <article>
                     <div id="project_7" class="images">
                         <ul class="slides">
                             <li>
-                                <a href="_img/receipts-welcome.png" class="img view" rel="project_7">
-                                    <img src="_img/receipts-welcome.png" class="no-boxshadow" alt="Receipts by Wave - Welcome view" />
+                                <a href="_img/receipts-welcome2.png" class="img view" rel="project_7">
+                                    <img src="_img/receipts-welcome2.png" class="no-boxshadow" alt="Receipts by Wave - Welcome view" />
                                 </a>
                             </li>
                             <li>
@@ -93,17 +101,24 @@
                                 <em>"With Receipts by Wave you can snap a photo of your receipt, verify the details and it connects seamlessly to your small biz accounting"</em>
                                 <br><br>
                                 <a href="https://itunes.apple.com/us/app/receipts-by-wave/id619867797?mt=8" title="iTunes - Receipts by Wave" target="_blank">iTunes</a>
-                                <br>
+                                &nbsp; | &nbsp;
                                 <a href="http://waveapps.com/receipts" title="waveapps.com/receipts" target="_blank">Wave</a>
                             </div>
                             <div id="prj7_s2_info" class="slide_info">
-                                <strong>Receipt list</strong>
+                                <!--strong>Receipt list</strong-->
+                                <p>Receipts by Wave was the 3rd major product offering from Wave. We wanted our users to be able to easily scan receipts and have those receipts be attached to the corresponding transactions within Wave.</p>
+                                <br>
+                                <p>By way of a 3rd party OCR vendor Wave reads the data from the receipt, populates the relavent fields with data and matches the receipt to a bank record.</p>
                             </div>
                             <div id="prj7_s3_info" class="slide_info">
-                                <strong>Receipt detail</strong>
+                                <!--strong>Receipt detail</strong-->
+                                <p>As Product Manager &amp; Designer of the mobile team I was asked to wear many hats. I served as Product Designer, Visual Designer, Development Manager and was heavily involved with our marketing efforts (App store descriptions, Artwork, Launch emails, etc.) of the iOS and Android apps.</p>
                             </div>
                             <div id="prj7_s4_info" class="slide_info">
-                                <strong>Menu</strong>
+                                <!--strong>Menu</strong-->
+                                <p>The launch was one of our best at Wave, being picked up by TechCrunch and numerous other tech, small business and accounting blogs.</p>
+                                <br>
+                                <p>More importantly, the app was extremely well received by many of our 600,000 Wave users.</p>
                             </div>
                             <div id="prj7_s5_info" class="slide_info">
                                 <strong>Features</strong>
@@ -134,26 +149,26 @@
                     </div>
                 </article>
                 <article>
-                    <div id="project_7" class="images">
+                    <div id="project_6" class="images">
                         <ul class="slides">
                             <li>
-                                <a href="_img/payroll-welcome.jpg" class="img view" rel="project_7">
-                                    <img src="_img/payroll-welcome.jpg" class="no-boxshadow" alt="Payroll by Wave - Welcome view" />
+                                <a href="_img/payroll-welcome2.png" class="img view" rel="project_6">
+                                    <img src="_img/payroll-welcome2.png" class="no-boxshadow" alt="Payroll by Wave - Welcome view" />
                                 </a>
                             </li>
                             <li>
-                                <a href="_img/payroll-welcome.jpg" class="img view" rel="project_7">
-                                    <img src="_img/payroll-welcome.jpg" alt="Payroll by Wave - Home view" />
+                                <a href="_img/payroll-homeview.jpg" class="img view" rel="project_6">
+                                    <img src="_img/payroll-homeview.jpg" alt="Payroll by Wave - Home view" />
                                 </a>
                             </li>
                             <li>
-                                <a href="_img/payroll-welcome.jpg" class="img view" rel="project_7">
-                                    <img src="_img/payroll-welcome.jpg" alt="Payroll by Wave - Payroll view" />
+                                <a href="_img/payroll-payroll.jpg" class="img view" rel="project_6">
+                                    <img src="_img/payroll-payroll.jpg" alt="Payroll by Wave - Payroll view" />
                                 </a>
                             </li>
                             <li>
-                                <a href="_img/payroll-welcome.jpg" class="img view" rel="project_7">
-                                    <img src="_img/payroll-welcome.jpg" alt="Payroll by Wave - Pay stub view" />
+                                <a href="_img/payroll-pay_stub.jpg" class="img view" rel="project_6">
+                                    <img src="_img/payroll-pay_stub.jpg" alt="Payroll by Wave - Pay stub view" />
                                 </a>
                             </li>
                         </ul>
@@ -164,44 +179,32 @@
                             Payroll by Wave
                         </div>
                         <div class="info">
-                            <div id="prj7_s1_info" class="slide_info">
-                                <p>Payroll by Wave is a receipt scanning/OCR app for iOS and Android.</p>
+                            <div id="prj6_s1_info" class="slide_info">
+                                <p>Payroll by Wave is a payroll app for iOS that enables our Payroll users to run their payroll, anywhere.</p>
                                 <br>
                                 <em>"Run payroll for your small business in less than a minute. Wave’s payroll tool is the easiest, most affordable way for small businesses to pay their employees."</em>
                                 <br><br>
                                 <a href="https://itunes.apple.com/ca/app/payroll-by-wave/id574934356?mt=8" title="iTunes - Payroll by Wave" target="_blank">iTunes</a>
-                                <br>
+                                &nbsp; | &nbsp;
                                 <a href="https://www.waveapps.com/payroll/mobile/" title="waveapps.com/payroll/mobile" target="_blank">Wave</a>
+                                &nbsp; | &nbsp;
+                                <a href="https://www.youtube.com/watch?feature=player_embedded&v=BWDG3LRJfVA" title="Payroll by Wave - Product video">Product video</a>
                             </div>
-                            <div id="prj7_s2_info" class="slide_info">
-                                <strong>Featured in:</strong>
-                                <ul class="styled">
-                                    <li>Apple App Store - Top Overall (#2 in Finance)</li>
-                                    <li>Apple App Store - Made in Canada</li>
-                                    <li>Apple App Store - Finance</li>
-                                    <li>Apple App Store - Business</li>
-                                    <li><a href="http://techcrunch.com/2013/04/10/wave-accounting-free-receipt-scanning/" title="Wave Debuts Free Receipt Scanning And Management Tool To Add To Its Free Accounting Platform">TechCrunch</a></li>
-                                </ul>
+                            <div id="prj6_s2_info" class="slide_info">
+                                <p>Payroll by Wave was the 1st mobile offering from Wave. Our goals were to:</p>
+                                <ol class="styled">
+                                    <li>Enable employers to run their payroll from their iOS device.</li>
+                                    <li>Enable employers to view past payrolls and pay stubs.</li>
+                                    <li>Reminded employers to run their payroll</li>
+                                    <li>Enable employees to view their pay stubs.</li>
+                                    <li>Notify employees when they've been paid.</li>
+                                </ol>
                             </div>
-                            <div id="prj7_s3_info" class="slide_info">
-                                <strong>Featured in:</strong>
-                                <ul class="styled">
-                                    <li>Apple App Store - Top Overall (#2 in Finance)</li>
-                                    <li>Apple App Store - Made in Canada</li>
-                                    <li>Apple App Store - Finance</li>
-                                    <li>Apple App Store - Business</li>
-                                    <li><a href="http://techcrunch.com/2013/04/10/wave-accounting-free-receipt-scanning/" title="Wave Debuts Free Receipt Scanning And Management Tool To Add To Its Free Accounting Platform">TechCrunch</a></li>
-                                </ul>
+                            <div id="prj6_s3_info" class="slide_info">
+                                <p>As Product Manager &amp; Designer of the mobile team I was asked to wear many hats. I served as Product Designer, Visual Designer, Development Manager and was heavily involved with our marketing efforts.</p>
                             </div>
-                            <div id="prj7_s4_info" class="slide_info">
-                                <strong>Featured in:</strong>
-                                <ul class="styled">
-                                    <li>Apple App Store - Top Overall (#2 in Finance)</li>
-                                    <li>Apple App Store - Made in Canada</li>
-                                    <li>Apple App Store - Finance</li>
-                                    <li>Apple App Store - Business</li>
-                                    <li><a href="http://techcrunch.com/2013/04/10/wave-accounting-free-receipt-scanning/" title="Wave Debuts Free Receipt Scanning And Management Tool To Add To Its Free Accounting Platform">TechCrunch</a></li>
-                                </ul>
+                            <div id="prj6_s4_info" class="slide_info">
+                                
                             </div>
                         </div>
                         <div class="tags">
@@ -479,26 +482,42 @@
                         </div>
                     </div>
 				</article>
+                <article class="contact">
+                    <!-- Begin MailChimp Signup Form -->
+                    <div id="mc_embed_signup">
+                        <form action="http://kwerk.us4.list-manage1.com/subscribe/post?u=8c1ae85d386c00a242bdc8690&amp;id=bf645f64a4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div class="title">
+                                <h2>Questions?</h2>
+                            </div>
+                            <div class="mc-field-group">
+                                <input type="email" value="" placeholder="email" name="EMAIL" class="required email" id="mce-EMAIL">
+                            </div>
+                            <div class="mc-field-group">
+                                <textarea type="text" value="" placeholder="message..." name="MMERGE3" class="required" id="mce-MMERGE3"></textarea>
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <div class="clear">
+                                <input type="submit" value="Contact me" name="subscribe" id="mc-embedded-subscribe" class="button">
+                            </div>
+                        </form>
+                    </div>
+                    <!--End mc_embed_signup-->                    
+                </article>
 			</div>
 		</div>
 	</div>
 	<footer>
-		<!--div class="pagination">
-			<a href="{PreviousPage}">&#171; Previous</a>
-			<a class="current_page">{PageNumber}</a>
-			<a class="jump_page" href="{URL}">{PageNumber}</a>
-			<a href="{NextPage}">Next &#187;</a>
-		</div-->
 		<p>Design by <a href="http://scottcormier.com" rel="me">Scott Cormier</a>.</p>
         <p>You should follow me on <a href="http://twitter.com/scormier" title="Follow Me on Twitter">Twitter</a></p>
-		<p>Copyright © 1980-2011</p>
+		<p>Copyright © 1980-2013</p>
 	</footer>
 	<script src="https://www.google.com/jsapi?key=ABQIAAAA_il1TRM5dInT9TwCZOJVCBTXsBezwwCOedBrfLJwMdtGsZKFWBTi4l8tA8B7m-bMRVWaULIvk84t9A"></script>
     <script type="text/javascript">
         google.load("jquery", "1");
     </script>
-	<script src="_js/jquery.flexslider-min.js"></script>
-	<script src="_js/view.min.js?auto"></script>
 	<script src="_js/script.js"></script>	
 	<!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
 	     change the UA-XXXXX-X to be your site's ID -->
