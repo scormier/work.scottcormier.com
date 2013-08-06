@@ -195,38 +195,33 @@ input.button {
 		font-family: proxima-nova-1,proxima-nova-2,Helvetica,Arial,sans-serif;
 		font-size: 108%;
 		border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(0,0,0,0.1);
 		margin: 0 0 25px;
 	}
 	nav ul {
 		margin: 0;
 	}
 	nav li {
-	  display: none;
 		float: left;
 		text-align: center;
 		text-transform: uppercase;
-		width: 30%;
+		width: 33.3%;
 	}
   nav li:first-child {
     text-align: left;
-  	width: 20%;
+  	width: 33.3%;
 	}
 	nav li:last-child {
 		text-align: right;
-		width: 20%;
+		width: 33.3%;
 	}
 	nav li a {
 		display: block;
 		padding: 5px 10px;
-	}
-	nav li:first-child a {
-		margin-left: -10px;
-	}
-	nav li:last-child a {
-		margin-right: -10px;
+    text-align: center;
 	}
 	nav li a:hover {
-		background: transparent;
+		background: rgba(0,0,0,0.1);
 		text-decoration: none;
 	}
 
@@ -261,12 +256,22 @@ input.button {
           height: auto;
           padding-bottom: 15px;
         }
-        #main article h2 {
-          margin: 0;
-        }
-        #main article ~ a {
+        #main article.cv {
+          background: transparent;
+          height: auto;
           margin-bottom: 30px;
+          max-height: none;
         }
+          #main article h2 {
+            margin: 0;
+          }
+              #main article h2.cv {
+               border-bottom: 1px solid rgba(0,0,0,0.1);
+               margin-bottom: 20px;
+              }
+          #main article ~ a {
+            margin-bottom: 30px;
+          }
           #main .images {
             border: 1px solid rgba(0, 0, 0, 0.2);
             border-radius: 4px 0 0 4px;
