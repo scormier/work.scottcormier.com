@@ -24,11 +24,10 @@ function View(a,b){function v(){t();q();d=c.find("img");g("body").append(c);if(!
 
 function getTagline(thisId) {
 	var txt = [
-		"a product designer",
+		"ux & product designer",
     "a mobile designer",
 		"a user experience designer",
-		"a product manager",
-		"a user researcher"
+		"a product manager"
 	];
 
 	if (!thisId) {
@@ -85,6 +84,9 @@ function initFlexslider(imgs) {
     controlsContainer: ".nav",
     nextText: '>',
     prevText: '<',
+    start: function( slider ){
+      $('.past .images').css('display', 'none');
+    },
     slideshow: false,
     touch: true
   });  
@@ -101,9 +103,10 @@ $(window).load(function() {
 });
 
 $(document).ready(function() {
-	updateTagLine();
-	updateHeaderSize();
-	$(window).bind("resize", updateHeaderSize);
+	//updateTagLine();
+	//updateHeaderSize();
+	//$(window).bind("resize", updateHeaderSize);
+  jQuery("#masthead h1").fitText(2);
 	
 	// Show direction navigation
 	$('.images').mouseenter(function(){;
@@ -117,11 +120,15 @@ $(document).ready(function() {
     var isVisible = $('.past').first().css("visibility");
     if (isVisible == "visible") {
       $(this).text('View past work');
-      $('.past').css("visibility", "hidden");
+      $('.past').css("visibility", "hidden").hide();
+      $('.past .images').hide();
     }
     else {
       $(this).text('Hide past work');
-      $('.past').css("visibility", "visible");
+      $('.past').css("visibility", "visible").show();
+      $('.past:not("article.cv")').css({ 'height':'400px', 'margin-bottom':'40px' });
+      $('.past').css({'margin':'20px 0'});
+      $('.past .images').show();
     }
     return false;
   });

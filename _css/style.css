@@ -108,10 +108,13 @@ h4 {
 }
 p {
 	font-size: 108%;
-	margin: 0 0 5px;
+	margin: 0 0 10px;
 }
   p.intro {
     display: none;
+    text-align: center;
+  }
+  p.summary {
     text-align: center;
   }
 ul,
@@ -145,9 +148,9 @@ textarea {
   border-radius: 4px;
   box-sizing: border-box;
   height: 50px;
-  margin: 5px 2%;
+  margin: 5px 0 10px;
   padding: 1%;
-  width: 96%;
+  width:100%;
 }
 textarea {
   height: 100px;
@@ -218,12 +221,18 @@ input.button {
 	nav li a {
 		display: block;
 		padding: 5px 10px;
-    text-align: center;
 	}
-	nav li a:hover {
-		background: rgba(0,0,0,0.1);
+  nav li a:hover {
+    background: rgba(0,0,0,0.05);
+  }
+	nav li a:hover,
+  nav li.active a {
+		border-bottom: 2px solid transparent;
 		text-decoration: none;
 	}
+  nav li.active a {
+    border-bottom: 2px solid #990000;
+  }
 
 #container {
 	margin: 0 auto 20px;
@@ -247,30 +256,43 @@ input.button {
         position: relative;
         width: 100%;
 			}
-        #main article.past {
-          display: none;
-          visibility: hidden;
+      #main article.past,
+      #main article.past.cv {
+        height: 0;
+        margin: 0;
+        visibility: hidden;
+      }
+      #main article.contact {
+        background: none;
+        height: auto;
+        padding-bottom: 15px;
+      }
+      #main article.cv {
+        background: transparent;
+        height: auto;
+        margin-bottom: 25px;
+        margin-top: 10px;
+        max-height: none;
+      }
+        #main article .contact-info {
+          float: left;
+          text-align: center;
+          width: 48%;
         }
-        #main article.contact {
-          background: none;
-          height: auto;
-          padding-bottom: 15px;
+        #main article .contact-info + div {
+          float: right;
+          text-align: center;
+          width: 48%;
         }
-        #main article.cv {
-          background: transparent;
-          height: auto;
-          margin-bottom: 30px;
-          max-height: none;
+        #main article.cv section {
+          margin-bottom: 25px;
         }
           #main article h2 {
             margin: 0;
           }
-              #main article h2.cv {
-               border-bottom: 1px solid rgba(0,0,0,0.1);
-               margin-bottom: 20px;
-              }
-          #main article ~ a {
-            margin-bottom: 30px;
+          #main article.cv h2{
+           border-bottom: 1px solid rgba(0,0,0,0.1);
+           margin-bottom: 15px;
           }
           #main .images {
             border: 1px solid rgba(0, 0, 0, 0.2);
@@ -464,9 +486,9 @@ input.button {
     				    float: left;
                 margin: 0 20px 0 0;
   				    }
-  #past_work {
+/*  #past_work {
     display: none;
-  }
+  }*/
 
 footer {
 	clear: both;
@@ -530,11 +552,10 @@ footer {
 	visibility: visible;
 }
 
-@media all and (orientation:portrait) { 
 
+@media all and (orientation:portrait) { 
 }
 @media all and (orientation:landscape) { 
-
 }
 @media screen and (max-device-width: 480px) {
 	/* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
@@ -543,6 +564,9 @@ footer {
   input,
   textarea {
     padding: 1% 3%;
+  }
+  #masthead {
+    padding: 0;
   }
 	#masthead h1 {
 		font-size: 150% !important;
@@ -556,7 +580,10 @@ footer {
     display: none;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) { 
+  #masthead {
+    padding: 0;
+  }
   p.intro {
     display: block;
     margin: 0 0 35px;
