@@ -87,7 +87,7 @@
             <p><em>July 2012 - Present</em></p>
             <p>Leading the design, ux and implementation of all mobile apps at Wave.</p>
             <p>After establishing the mobile team at Wave, I've acted as the Product Manager of all mobile products. I'm responsible for the requirements gathering (market & user research), wireframing, prototyping, visual design, dev management, usability testing and product marketing for all of our mobile apps (iOS and Android).</p>
-            <p>I've designed and shipped Payroll by Wave (5 star rating), Receipts by Wave (4.5 star rating with multiple features in the Apple App Store), and Payments by Wave (in beta).</p>
+            <p>I've designed and shipped <em>Payroll by Wave</em> (<strong>5</strong> star rating), <em>Receipts by Wave</em> (<strong>4.5</strong> star rating with multiple features in the Apple App Store), and <em>Payments by Wave</em> (in beta).</p>
             <p>For a more detailed look into some of these apps, please check out my <a href="http://work.scottcormier.com" title="Portfolio">portfolio</a>.
           </section>
           <section>
@@ -157,50 +157,6 @@
     google.load("jquery", "1");
   </script>
   <script src="_js/script.js"></script>
-  <script>
-    /*!
-    * FitText.js 1.1
-    *
-    * Copyright 2011, Dave Rupert http://daverupert.com
-    * Released under the WTFPL license
-    * http://sam.zoy.org/wtfpl/
-    *
-    * Date: Thu May 05 14:23:00 2011 -0600
-    */
-
-    (function( $ ){
-
-    $.fn.fitText = function( kompressor, options ) {
-
-      // Setup options
-      var compressor = kompressor || 1,
-          settings = $.extend({
-            'minFontSize' : Number.NEGATIVE_INFINITY,
-            'maxFontSize' : Number.POSITIVE_INFINITY
-          }, options);
-
-      return this.each(function(){
-
-        // Store the object
-        var $this = $(this);
-
-        // Resizer() resizes items based on the object width divided by the compressor * 10
-        var resizer = function () {
-          $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
-        };
-
-        // Call once to set.
-        resizer();
-
-        // Call on resize. Opera debounces their resize by default.
-        $(window).on('resize orientationchange', resizer);
-
-      });
-
-    };
-
-    })( jQuery );
-  </script>
   <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
        change the UA-XXXXX-X to be your site's ID -->
   <script>
