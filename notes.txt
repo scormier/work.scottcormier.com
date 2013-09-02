@@ -1,3 +1,0 @@
-reduce menu font size for mobile
-improve menu alignment
-

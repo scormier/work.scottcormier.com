@@ -110,9 +110,15 @@ p {
 	font-size: 108%;
 	margin: 0 0 10px;
 }
+footer p {
+  margin: 0;
+}
   p.intro {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+    clear: both;
     display: none;
-    text-align: center;
+    margin: 0 -35px 35px;
+    padding: 10px 35px;
   }
   p.summary {
     text-align: center;
@@ -171,9 +177,8 @@ input.button {
 }
 #masthead h1 {
 	font-size: 197%;
-	height: 55px;
 	line-height: 100%;
-	margin: 0 auto 15px;
+	margin: 0 auto 10px;
 	max-width: 960px;
   text-align: center;
 }
@@ -219,6 +224,7 @@ input.button {
 		width: 33.3%;
 	}
 	nav li a {
+    border-top: 2px solid transparent;
 		display: block;
 		padding: 5px 10px;
 	}
@@ -250,12 +256,16 @@ input.button {
 			#main article {
         background: rgba(255, 255, 255, 0.4);
         float: left;
-        height: 400px;
+        height: 600px;
         margin: 0 0 40px;
-        max-height: 400px;
+        max-height: 600px;
         position: relative;
         width: 100%;
 			}
+      #main article.web {
+        height: 400px;
+        max-height: 400px;
+      }
       #main article.past,
       #main article.past.cv {
         height: 0;
@@ -273,6 +283,9 @@ input.button {
         margin-bottom: 25px;
         margin-top: 10px;
         max-height: none;
+      }
+      #main article.cv.contact {
+        margin-top: 25px;
       }
         #main article .contact-info {
           float: left;
@@ -336,10 +349,13 @@ input.button {
           				cursor: pointer;
           				display: block;
           				margin: 0 auto;
-          				max-height: 300px;
+          				max-height: 500px;
           				max-width: 100%;
           				width: auto;
           			}
+                #main .web .img img {
+                  max-height: 300px;
+                }
         			  #main .img img:hover {
           				-moz-box-shadow:0 5px 10px rgba(0,0,0,0.4);
           				-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.4);
@@ -395,9 +411,12 @@ input.button {
               #main .flex-direction-nav {
                 left: 0;
                 position: absolute;
-                top: -190px;
+                top: -290px;
                 width: 100%;
-                z-index: 1;
+                z-index: 0;
+              }
+              #main .web .flex-direction-nav {
+                top: -190px;
               }
                 #main .flex-direction-nav li {
                   background: rgb(57, 68, 74);
@@ -458,6 +477,7 @@ input.button {
             }
               #main .slide_info  {
                 display: none;
+                margin-bottom: 10px;
               }
               #main .slide_info:first-child  {
                 display: block;
@@ -569,33 +589,87 @@ footer {
     padding: 0;
   }
 	#masthead h1 {
-		font-size: 150% !important;
+    line-height: 85% !important;
+    margin: 20px auto 10px !important;
 		text-align: center;
 	}
+    #masthead h1 span {
+      display: block;
+      font-size: 18px;
+    }
+  #main .title span {
+    display: none;
+  }
+  nav li,
+  nav li:first-child,
+  nav li:last-child {
+    text-align: center;
+    width: 50%;
+  }
+  nav li:last-child {
+    display: none;
+  }
+  #main article .contact-info,
+  #main article .contact-info + div {
+    float: none;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  #main article .contact-info + div {
+    margin-bottom: 0px;
+  }
   #main article .images {
     min-height: 300px;
   }
+    #main article .img img {
+      max-height: 320px;
+    }
+    #main .flex-control-nav {
+      margin-top: 13px;
+    }
+
   #past_work,
   .past {
     display: none;
   }
 }
+
+@media screen and (max-width: 425px) { 
+  #masthead h1 span {
+    display: block;
+    font-size: 18px;
+  }
+  #main article .contact-info,
+  #main article .contact-info + div {
+    float: none;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  #main article .contact-info + div {
+    margin-bottom: 0px;
+  }
+}
+
 @media screen and (max-width: 800px) { 
   #masthead {
+    margin-top: 0;
     padding: 0;
+  }
+  #masthead h1 {
+    margin-top: 0;
+    text-align: center;
+  }
+  #masthead nav li a {
+    height: 44px;
+    line-height: 44px;
   }
   p.intro {
     display: block;
-    margin: 0 0 35px;
+    margin: 0 -35px 15px;
   }
   input,
   textarea {
     padding: 2% 3%;
-  }
-  #masthead h1 {
-    font-size: 166% !important;
-    margin-bottom: 5px;
-    text-align: center;
   }
 	#container {
 		margin: 0 auto 20px;
@@ -620,6 +694,12 @@ footer {
         border-radius: 4px 4px 0 0;
         min-height: 390px;
       }
+        #main .img {
+          padding: 2%;
+        }
+          #main .img img {
+            max-height: 305px;
+          }
         #main .flex-direction-nav {
           display: none;
         }
@@ -636,6 +716,11 @@ footer {
         height: auto;
         position: relative;
       }
+
+    #past_work,
+    .past {
+      display: none;
+    }
 
 		#sidebar {
 			float: none;
