@@ -10,7 +10,7 @@
  @category   Lightbox, Image Viewer
  @author     Rogie King <rogie@finegoodsmarket.com>
  @copyright  2011-2011 Rogie King
- @version    1.01 
+ @version    1.01
  @license    By purchasing View.js, you agree to the following: View.js remain property of Rogie King. View.js may be used by the licensee in any personal or commercial projects. View.js may not be resold or  redistributed. For example: packaged in an application where it could be downloaded for free, such as an open-source project or other application where View.js is bundled along with other files.View.js — A simple, lightweight, jQuery photo viewer for the web by Rogie King is licensed under a Creative Commons Attribution-NoDerivs 3.0 Unported License.
 */
 
@@ -45,7 +45,7 @@ function updateTagLine(startId) {
 	$(tagLine).html(tag);
 	$(tagLine2).html(tag);
 	updateHeaderSize();
-	
+
 	if (startId < 8) {
 		window.setTimeout("updateTagLine("+ startId + 1 +")", 10000);
 	}
@@ -73,7 +73,7 @@ function updateHeaderSize() {
   else {
     $(mHeadTx).css("fontSize", "165%");
   }
-	
+
 	var curSize	= $(mHeadTx).css("fontSize").replace("px","");
 	$(mHeadTx).css("font-size", Math.floor(curSize * diffW));
 }
@@ -99,7 +99,7 @@ function initFlexslider(imgs) {
     },
     slideshow: false,
     touch: true
-  });  
+  });
 }
 
 $(window).load(function() {
@@ -116,7 +116,7 @@ $(document).ready(function() {
 	//updateTagLine();
 	updateHeaderSize();
 	$(window).bind("resize", updateHeaderSize);
-	
+
 	// Show direction navigation
 	$('.images').mouseenter(function(){;
 	  $(this).find('.flex-direction-nav li').fadeIn();
