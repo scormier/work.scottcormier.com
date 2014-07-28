@@ -640,6 +640,14 @@ footer .pagination a.current_page:hover {
   max-height: 791px;
   overflow-x: scroll;
 }
+.case-study section.images.wires {
+  max-height: 650px;
+  overflow-x: scroll;
+}
+.case-study section.images.wires img {
+  height: 650px;
+  width: auto;
+}
 .case-study section.images li {
   float:left;
   margin: 0 30px;
