@@ -10,7 +10,7 @@ var defaults = {
 	isRetina: (window.devicePixelRatio > 1),
 	device: "iphone",				// "iphone" or "android"
 	background: 0,
-	url: "https://s3-us-west-2.amazonaws.com/tweakapp.co/Framewebview/lightbox/index.html"
+	url: "https://s3-us-west-2.amazonaws.com/work.scottcormier.com/sf-results.framer/index.html"
 };
 
 var backgrounds = [
