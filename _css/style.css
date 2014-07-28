@@ -481,6 +481,9 @@ nav li.active a {
   line-height: 40px;
   padding: 2% 4%;
 }
+#main .title span {
+  font-weight: normal;
+}
 #main form .title {
   border: none;
   padding: 2% 2% 0;
@@ -645,7 +648,7 @@ footer .pagination a.current_page:hover {
   overflow-x: scroll;
 }
 .case-study section.images.wires img {
-  height: 650px;
+  height: 700px;
   width: auto;
 }
 .case-study section.images li {
