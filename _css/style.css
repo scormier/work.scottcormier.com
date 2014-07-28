@@ -114,8 +114,10 @@ h4 {font-size: 100%;
 	margin: 0 0 10px;
 }
 p {
-	font-size: 108%;
-	margin: 0 0 30px;
+  font-size: 110%;
+  margin: 0 0 30px;
+  line-height: 1.5;
+  letter-spacing: 0.01rem;
 }
 footer p {
   margin: 0;
@@ -544,20 +546,20 @@ footer .pagination {
 	width: 100%;
 }
 footer .pagination a {
-    background: rgba(255,255,255,0.2);
-    border: 1px solid rgba(0,0,0,0.2);
-		-moz-border-radius: 2px;
-		-webkit-border-radius: 2px;
-		border-radius: 2px;
-		-moz-box-shadow: 0 1px 1px #fff inset;
-		-webkit-box-shadow: 0 1px 1px #fff inset;
-		box-shadow: 0 1px 1px #fff inset;
-		font-weight: bold;
-		height: 20px;
-		line-height: 20px;
-    margin: 0 5px 20px;
-    padding: 5px 10px 3px;
-    text-shadow: 0 1px 0 #fff;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(0,0,0,0.2);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0 1px 1px #fff inset;
+  -webkit-box-shadow: 0 1px 1px #fff inset;
+  box-shadow: 0 1px 1px #fff inset;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 5px 20px;
+  padding: 5px 10px 3px;
+  text-shadow: 0 1px 0 #fff;
 }
 footer .pagination a.current_page {
 	color: #39444A;
@@ -730,7 +732,6 @@ footer .pagination a.current_page:hover {
     display: none;
   }
 }
-
 @media screen and (max-width: 425px) {
   #masthead h1 span {
     display: block;
@@ -746,7 +747,6 @@ footer .pagination a.current_page:hover {
     margin-bottom: 0px;
   }
 }
-
 @media screen and (max-width: 800px) {
   #masthead {
     margin-top: 0;
@@ -827,6 +827,7 @@ footer .pagination a.current_page:hover {
 				width: 100%;
 			}
 }
+
 
 @media print {
   * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
