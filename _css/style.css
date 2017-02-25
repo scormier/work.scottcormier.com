@@ -94,7 +94,7 @@ button {  width: auto; overflow: visible; }
    Author: Scott Cormier
 */
 body {
-	background:url(http://static.tumblr.com/0vhitxf/F4mlfpjf8/bg.png) repeat 0 0 transparent;
+	// background:url(http://static.tumblr.com/0vhitxf/F4mlfpjf8/bg.png) repeat 0 0 transparent;
 	font:300 1em/1.5 proxima-nova-1,proxima-nova-2,Helvetica,Arial,sans-serif;
 	padding:15px 0 0;
 }
