@@ -102,7 +102,7 @@ function initFlexslider(imgs) {
   });
 }
 
-$(window).load(function() {
+$(window).on(function() {
   var imgs = $('.images');
   initFlexslider(imgs);
   // Center flexslider nav dots
